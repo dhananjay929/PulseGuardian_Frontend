@@ -8,7 +8,7 @@ const Prediction = () => {
   const data = sharedData;
   
   useEffect(() => {
-    if( data === "0"){
+    if( data === 0){
       setPredict({ image: "healthyheart.jpg", head: "Congratulations! You don't have any heart disease!",text:"You have a healthy heart !!!" })}else{
         setPredict({ image: "unhealthyheart.jpg", head: "Alas! You have a heart disease!",text:"You need to  consult a doctor soon!!!" })};
       }, [data])
